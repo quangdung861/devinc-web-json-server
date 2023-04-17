@@ -5,7 +5,7 @@ import { REQUEST, SUCCESS, FAIL, CATEGORY_ACTION } from "../constants";
 
 function* getCategoryListSaga(action) {
   try {
-    const result = yield axios.get(`http://localhost:4000/categories`, {
+    const result = yield axios.get(`https://devinc-web-json-server-i27x.vercel.app/categories`, {
       _sort: "id",
       _order: "desc",
     });
