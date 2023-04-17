@@ -1,7 +1,7 @@
 // See https://github.com/typicode/json-server#module
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('./database/db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
@@ -11,7 +11,7 @@ server.use(jsonServer.rewriter({
     '/blog/:resource/:id/show': '/:resource/:id'
 }))
 server.use(router)
-server.listen(3000, () => {
+server.listen(4000, () => {
     console.log('JSON Server is running')
 })
 
