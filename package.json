@@ -1,6 +1,7 @@
 {
   "name": "devinc-web",
   "description": "Deploy JSON Server to Vercel",
+  "main": "api/server.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
